@@ -22,12 +22,8 @@ function App() {
             Learn React
           </a>
           <Counter />
-        </header>
-       
-      </div>
-     
-    
-      
+        </header> 
+      </div>  
     </Provider>
   );
 }
