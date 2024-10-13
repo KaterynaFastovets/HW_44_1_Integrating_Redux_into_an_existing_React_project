@@ -1,8 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit' 
-import counterReducer from './counterReducer' 
+import { configureStore } from '@reduxjs/toolkit';
+import counterSlise from "./counter/counterSlise"
 
 const store = configureStore({
-  reducer: counterReducer 
-})
+    reducer: counterSlise,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat()
+});
 
-export default store 
+export default store;
