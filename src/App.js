@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import Counter from "./components/Counter";
+import Counter from "./components/counter";
 
 function App() {
   return (
