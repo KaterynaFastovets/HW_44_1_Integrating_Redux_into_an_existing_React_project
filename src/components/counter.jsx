@@ -1,8 +1,9 @@
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../redux/action";
+import { decrement, increment } from "../redux/counter/counterSlise";
 
 function Counter() {
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.value);
   const dispatch = useDispatch();
 
   return (
